@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.protectonataciondto_record.ViewController.ParticipantesViewController">
+
+    <VBox alignment="CENTER" layoutX="50.0" layoutY="50.0" spacing="10">
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Registro de Participantes" />
+
+        <TextField fx:id="txtNombre" promptText="Nombre del participante" />
+        <TextField fx:id="txtApellido" promptText="Apellido del participante" />
+        <TextField fx:id="txtEdad" promptText="Edad" />
+        <TextField fx:id="txtCategoria" promptText="Categoría" />
+
+        <Label style="-fx-font-size: 14px;" text="Tiempo del participante:" />
+        <HBox spacing="5">
+            <TextField fx:id="txtTiempoMinutos" promptText="Minutos" maxWidth="70" />
+            <TextField fx:id="txtTiempoSegundos" promptText="Segundos" maxWidth="70" />
+            <TextField fx:id="txtTiempoMilisegundos" promptText="Milisegundos" maxWidth="90" />
+        </HBox>
+
+        <Button fx:id="btnRegistrar" onAction="#registrarParticipante" text="Registrar" />
+
+        <Label style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Participantes Registrados:" />
+        <TextArea fx:id="txtListaParticipantes" editable="false" prefHeight="150.0" />
+
+        <Button fx:id="btnVolver" onAction="#regresarMenu" text="Volver" />
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.protectonataciondto_record.ViewController.MenuViewController">
+
+    <VBox alignment="CENTER" layoutX="440.0" layoutY="260.0" prefHeight="200.0" prefWidth="400.0" spacing="20">
+        <Button fx:id="btnJugadores" style="-fx-font-size: 22px; -fx-padding: 10px 40px; -fx-background-color: #0077CC; -fx-text-fill: white;" text="Participante" />
+        <Button fx:id="btnPuntajes" style="-fx-font-size: 22px; -fx-padding: 10px 40px; -fx-background-color: #0077CC; -fx-text-fill: white;" text="Puntajes" />
+        <Button fx:id="btnResultado" style="-fx-font-size: 22px; -fx-padding: 10px 40px; -fx-background-color: #0077CC; -fx-text-fill: white;" text="Resultado" />
+    </VBox>
+   <Label fx:id="txtMenuJuego" layoutX="537.0" layoutY="160.0" text="Menu de Juego" textOverrun="WORD_ELLIPSIS" underline="true">
+      <font>
+         <Font name="Berlin Sans FB Bold" size="30.0" />
+      </font>
+   </Label>
+   <Button fx:id="btnVolver" layoutX="614.0" layoutY="482.0" mnemonicParsing="false" onAction="#regresarBienvenida" text="Volver" />
+</AnchorPane>
