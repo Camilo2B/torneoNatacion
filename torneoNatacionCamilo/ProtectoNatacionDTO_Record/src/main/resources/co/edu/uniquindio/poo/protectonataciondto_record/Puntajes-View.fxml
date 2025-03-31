@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.protectonataciondto_record.ViewController.PuntajesViewController">
+
+
+    <!-- Contenedor principal -->
+    <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="10">
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Resultados de la Competencia" />
+
+        <!-- Tabla de Puntajes -->
+        <TableView fx:id="tablaResultados" prefHeight="300" prefWidth="500">
+            <columns>
+                <TableColumn fx:id="colNombre" prefWidth="150" text="Nombre" />
+                <TableColumn fx:id="colApellido" prefWidth="150" text="Apellido" />
+                <TableColumn fx:id="colEdad" prefWidth="100" text="Edad" />
+                <TableColumn fx:id="colCategoria" prefWidth="100" text="Categoria" />
+                <TableColumn fx:id="colTiempo" prefWidth="150" text="Tiempo (segundos)" />
+
+
+            </columns>
+        </TableView>
+      <Button fx:id="btnVolver" mnemonicParsing="false" onAction="#regresarMenu" text="Volver" />
+    </VBox>
+</AnchorPane>
